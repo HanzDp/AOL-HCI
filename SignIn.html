@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="SignIn.css">
+</head>
+<body background="background image.jpg">
+
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            3D Order
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Contact.html">Contact Person</a></li>
+            <li><a href="OrderInformation.html">ORDER NOW</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="header">
+      <h1>3D Order</h1>
+      <button class="button-sign">Sign Up</button>
+    </div>
+    <div class="form-container">
+      <div id="error-message" class="error-message"></div>
+      <h2>Sign Up Information</h2>
+      <form id="signup-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+    
+    <div class="footer">
+      <p>Already have an account? <a href="Login.html">Click Here</a></p>
+    </div>
+  </div>
+  
+  <script src="SignIn.js"></script>
+</body>
+</html>
