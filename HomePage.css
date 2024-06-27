@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    padding-top: 80px; /* Tambahkan padding-top untuk menghindari konten di bawah navbar */
 }
 
 .navbar {
@@ -13,6 +14,12 @@ body {
     background-size: cover;
     background-position: center;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
+    background-color: rgba(255, 255, 255, 0.8); /* Mengatur transparansi background */
+    backdrop-filter: blur(10px); /* Tambahkan efek blur untuk tampilan yang lebih baik */
 }
 
 .navbar-container {
@@ -59,6 +66,18 @@ body {
 .content h2 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
 }
 
 .columns {
